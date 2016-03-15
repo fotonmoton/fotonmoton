@@ -1,3 +1,9 @@
+$medium-height: "(max-height:736px)";
+$small-height: "(max-height:600px)";
+$medium-width: "(max-width: 1024px)";
+$small-width: "(max-width: 450px)";
+$smallest-width: "(max-width: 350px)";
+
 html, body {
 	padding: 0;
 	margin: 0;
@@ -6,6 +12,14 @@ html, body {
 	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 	color: #E9E9E9;
 	font-size: 100%;
+
+	@media #{$medium-height} {
+		font-size: 90%;
+	}
+
+	@media #{$smallest-width} {
+		font-size: 80%;
+	}
 }
 
 body {
@@ -24,41 +38,101 @@ body {
 		align-items: center;
 		height: 100%;
 		width: 45%;
-		padding: 0 30px;
+		padding: 0rem 3rem;
 
-			.greetings {
-				font-family: 'Pacifico', cursive;
-				font-size: 3rem;
-				font-style: italic;
-			}
-
-			h3 {
-				font-weight: normal;
-				font-size: 1.2rem;
-				margin: 0;
-				text-align: center;
-				padding: 40px 0px 0px 0px;
-			} 
+		@media #{$medium-width} {
+			width: 100%;
+			padding: 0;
+		}
 
 		img {
 			border-radius: 100%;
+			width: 10rem;
+			height: 10rem;
+
+			@media #{$small-width} {
+				width: 8rem;
+				height: 8rem;
+			}
+
+			@media #{$small-height} {
+				width: 8rem;
+				height: 8rem;
+			}
 		}
+
+		h3 {
+			margin: 0;
+			text-align: center;
+			padding: 3rem 0rem 0rem 0rem;
+
+			@media #{$medium-height} {
+				padding: 1rem 0rem 0rem 0rem;
+			}
+		}
+
+		.greetings {
+			font-family: 'Pacifico', cursive;
+			font-size: 3rem;
+			font-style: italic;
+
+			@media #{$small-width} {
+				font-size: 2.5rem;
+			}
+		}
+
+		.main-text {
+			font-weight: normal;
+			font-size: 1.2rem;
+
+			@media #{$small-width} {
+				font-size: 1.1rem;
+			}
+		} 
 
 		.icon-wrap {
 			width: 100%;
 			display: flex;
 			justify-content: center;
-			padding: 40px 0px;
+			flex-wrap: wrap;
+			padding: 3rem 0rem 2rem 0rem;
 			margin: 0;
 			border-bottom: 1px solid #3B3C3E;
 
-			li {
+			@media #{$medium-height} {
+				padding: 1rem 0rem;
+			}
+
+			@media #{$medium-width} {
+				width: 90%;
+			}
+
+			@media #{$small-width} {
+				width: 60%;
+			}
+
+			.icon {
 				list-style-type: none;
-				padding: 0px 5px;
 			}
 
 			a {
 				color: #E9E9E9;
+				text-decoration: none;
+				margin: 0rem 0.4rem;
+				width: 4rem;
+				height: 4rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgba(168, 168, 168, 0);
+				border-radius: 100%;
+				transition-property: background-color;
+				transition-duration: 0.3s;
+				transition-timing-function: ease-out;
+				
+				&:hover {
+					background-color: rgba(168, 168, 168, 0.2);
+				}
 			}
 		}
 
@@ -67,31 +141,45 @@ body {
 			padding: 0;
 			margin: 0;
 
+			@media #{$medium-height} {
+				padding: 1rem;
+			}
+			
+			@media #{$small-width} {
+				flex-direction: column;
+
+			}
+
 			li {
 				list-style-type: none;
-				height: 20px;
 			}
 
 			.about-button {
 				color: #E9E9E9;
 				text-decoration: none;
-				
-				div {
-					margin: 40px 10px;
-					width: 5rem;
-					height: 1.8rem;
-					border-radius: 4px;
-					background-color: rgba(168, 168, 168, 0);
-					display: flex;
-					justify-content: space-around;
-					align-items: center;
-					transition-property: background-color;
-					transition-duration: 0.3s;
-					transition-timing-function: ease-out;
+				margin: 3rem 1rem;
+				width: 5rem;
+				height: 1.8rem;
+				border-radius: 4px;
+				background-color: rgba(168, 168, 168, 0);
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				transition-property: background-color;
+				transition-duration: 0.3s;
+				transition-timing-function: ease-out;
+				font-size: 1rem;
 
-					&:hover {
-						background-color: rgba(168, 168, 168, 0.6);
-					}
+				&:hover {
+					background-color: rgba(168, 168, 168, 0.2);
+				}
+
+				@media #{$small-width} {
+					margin: 1rem 1rem;
+				}
+
+				@media #{$medium-height} {
+					margin: 1rem 1rem;
 				}
 			}
 		}
@@ -103,8 +191,16 @@ body {
 		justify-content: center;
 
 		p {
-			font-size: 0.9rem;
+			font-size: 0.8rem;
 			color: #767678;
+
+			@media #{$small-width} {
+				display: none;
+			}
+
+			@media #{$small-height} {
+				display: none;
+			}
 		}
 	}
 }
