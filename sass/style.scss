@@ -12,6 +12,7 @@ html, body {
 	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 	color: #E9E9E9;
 	font-size: 100%;
+	overflow: hidden;
 
 	@media #{$medium-height} {
 		font-size: 90%;
@@ -38,6 +39,7 @@ body {
 		height: 100%;
 		width: 45%;
 		padding: 0rem 3rem;
+		overflow: hidden;
 
 		@media #{$medium-width} {
 			width: 100%;
@@ -50,7 +52,7 @@ body {
 			height: 10rem;
 			animation-name: land-out;
 			animation-duration: 0.75s;
-		  	animation-delay: 0.10s;
+		  	animation-delay: 0.5s;
 			animation-fill-mode: forwards;
 			opacity: 0;
 
@@ -81,7 +83,7 @@ body {
 			font-style: italic;
 			animation-name: land-in;
 			animation-duration: 0.75s;
-		  	animation-delay: 0.5s;
+		  	animation-delay: 0.75s;
 			animation-fill-mode: forwards;
 			opacity: 0;
 
@@ -95,7 +97,7 @@ body {
 			font-size: 1.2rem;
 			animation-name: land-in;
 			animation-duration: 0.75s;
-		  	animation-delay: 0.75s;
+		  	animation-delay: 1s;
 			animation-fill-mode: forwards;
 			opacity: 0;
 
@@ -114,7 +116,7 @@ body {
 			border-bottom: 1px solid #3B3C3E;
 			animation-name: land-in;
 			animation-duration: 0.75s;
-		  	animation-delay: 1s;
+		  	animation-delay: 1.25s;
 			animation-fill-mode: forwards;
 			opacity: 0;
 
@@ -161,12 +163,12 @@ body {
 			margin: 0;
 			animation-name: land-in;
 			animation-duration: 0.75s;
-		  	animation-delay: 1.25s;
+		  	animation-delay: 1.5s;
 			animation-fill-mode: forwards;
 			opacity: 0;
 
 			@media #{$medium-height} {
-				padding: 1rem;
+				padding: 1rem 0rem;
 			}
 
 			li {
@@ -236,7 +238,7 @@ body {
     opacity: 0;
     animation-name: bg-anim;
 	animation-duration: 0.75s;
-  	animation-delay: 0s;
+  	animation-delay: 0.25s;
 	animation-fill-mode: forwards;
 
 	@media #{$medium-height} {
