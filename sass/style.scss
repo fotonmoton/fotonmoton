@@ -214,6 +214,11 @@ body {
 		p {
 			font-size: 0.8rem;
 			color: #767678;
+			animation-name: land-in;
+			animation-duration: 0.75s;
+		  	animation-delay: 2s;
+			animation-fill-mode: forwards;
+			opacity: 0;
 
 			@media #{$small-width} {
 				display: none;
