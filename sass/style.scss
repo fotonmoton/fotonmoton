@@ -29,7 +29,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #E9E9E9;
+	background-color: #103E50;
 
 	main {
 		display: flex;
@@ -242,8 +242,8 @@ body {
     z-index: -1;
     opacity: 0;
     animation-name: bg-anim;
-	animation-duration: 0.75s;
-  	animation-delay: 0.25s;
+	animation-duration: 1.25s;
+  	animation-delay: 2.10s;
 	animation-fill-mode: forwards;
 
 	@media #{$medium-height} {
