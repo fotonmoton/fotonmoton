@@ -69,6 +69,11 @@ body {
 			border-radius: 100%;
 			width: 10rem;
 			height: 10rem;
+			animation-name: land-in;
+			animation-duration: 0.75s;
+		  	animation-delay: 0.25s;
+			animation-fill-mode: forwards;
+			opacity: 0;
 
 			@media #{$small-width} {
 				width: 8rem;
@@ -95,6 +100,11 @@ body {
 			font-family: 'Pacifico', cursive;
 			font-size: 3rem;
 			font-style: italic;
+			animation-name: land-in;
+			animation-duration: 0.75s;
+		  	animation-delay: 0.5s;
+			animation-fill-mode: forwards;
+			opacity: 0;
 
 			@media #{$small-width} {
 				font-size: 2.5rem;
@@ -104,6 +114,11 @@ body {
 		.main-text {
 			font-weight: normal;
 			font-size: 1.2rem;
+			animation-name: land-in;
+			animation-duration: 0.75s;
+		  	animation-delay: 0.75s;
+			animation-fill-mode: forwards;
+			opacity: 0;
 
 			@media #{$small-width} {
 				font-size: 1.1rem;
@@ -118,6 +133,11 @@ body {
 			padding: 3rem 0rem 2rem 0rem;
 			margin: 0;
 			border-bottom: 1px solid #3B3C3E;
+			animation-name: land-in;
+			animation-duration: 0.75s;
+		  	animation-delay: 1s;
+			animation-fill-mode: forwards;
+			opacity: 0;
 
 			@media #{$medium-height} {
 				padding: 1rem 0rem;
@@ -160,6 +180,11 @@ body {
 			display: flex;
 			padding: 0;
 			margin: 0;
+			animation-name: land-in;
+			animation-duration: 0.75s;
+		  	animation-delay: 1.25s;
+			animation-fill-mode: forwards;
+			opacity: 0;
 
 			@media #{$medium-height} {
 				padding: 1rem;
@@ -217,5 +242,16 @@ body {
 				display: none;
 			}
 		}
+	}
+}
+
+@keyframes land-in {
+	0% {
+	    opacity: 0;
+	    transform: scale(1.1);
+	}
+	100% {
+	    opacity: 1;
+	    transform: scale(1);
 	}
 }
