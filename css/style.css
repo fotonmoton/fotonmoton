@@ -24,33 +24,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: url("../img/bg.jpg") no-repeat center center fixed;
-  background-size: cover;
-}
-@media (max-height: 736px) {
-  body {
-    background-image: url("../img/bg-medium.jpg");
-  }
-}
-@media (max-height: 736px) {
-  body {
-    background-image: url("../img/bg-medium.jpg");
-  }
-}
-@media (max-width: 1024px) {
-  body {
-    background-image: url("../img/bg-medium.jpg");
-  }
-}
-@media (max-height: 600px) {
-  body {
-    background-image: url("../img/bg-small.jpg");
-  }
-}
-@media (max-width: 450px) {
-  body {
-    background-image: url("../img/bg-small.jpg");
-  }
+  background-color: #E9E9E9;
 }
 body main {
   display: flex;
@@ -71,9 +45,9 @@ body main img {
   border-radius: 100%;
   width: 10rem;
   height: 10rem;
-  animation-name: land-in;
+  animation-name: land-out;
   animation-duration: 0.75s;
-  animation-delay: 0.25s;
+  animation-delay: 0.10s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -244,6 +218,47 @@ body footer p {
   }
 }
 
+#bg {
+  background: url("../img/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  animation-name: bg-anim;
+  animation-duration: 0.75s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+@media (max-height: 736px) {
+  #bg {
+    background-image: url("../img/bg-medium.jpg");
+  }
+}
+@media (max-height: 736px) {
+  #bg {
+    background-image: url("../img/bg-medium.jpg");
+  }
+}
+@media (max-width: 1024px) {
+  #bg {
+    background-image: url("../img/bg-medium.jpg");
+  }
+}
+@media (max-height: 600px) {
+  #bg {
+    background-image: url("../img/bg-small.jpg");
+  }
+}
+@media (max-width: 450px) {
+  #bg {
+    background-image: url("../img/bg-small.jpg");
+  }
+}
+
 @keyframes land-in {
   0% {
     opacity: 0;
@@ -252,6 +267,24 @@ body footer p {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+@keyframes land-out {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes bg-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
