@@ -27,6 +27,31 @@ body {
   background: url("../img/bg.jpg") no-repeat center center fixed;
   background-size: cover;
 }
+@media (max-height: 736px) {
+  body {
+    background-image: url("../img/bg-medium.jpg");
+  }
+}
+@media (max-height: 736px) {
+  body {
+    background-image: url("../img/bg-medium.jpg");
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    background-image: url("../img/bg-medium.jpg");
+  }
+}
+@media (max-height: 600px) {
+  body {
+    background-image: url("../img/bg-small.jpg");
+  }
+}
+@media (max-width: 450px) {
+  body {
+    background-image: url("../img/bg-small.jpg");
+  }
+}
 body main {
   display: flex;
   justify-content: center;
@@ -141,11 +166,6 @@ body main .about-wrap {
 @media (max-height: 736px) {
   body main .about-wrap {
     padding: 1rem;
-  }
-}
-@media (max-width: 450px) {
-  body main .about-wrap {
-    flex-direction: column;
   }
 }
 body main .about-wrap li {

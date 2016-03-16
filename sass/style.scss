@@ -31,6 +31,26 @@ body {
 	background: url("../img/bg.jpg") no-repeat center center fixed;
 	background-size: cover;
 
+	@media #{$medium-height} {
+		background-image: url("../img/bg-medium.jpg");
+	}
+
+	@media #{$medium-height} {
+		background-image: url("../img/bg-medium.jpg");
+	}
+
+	@media #{$medium-width} {
+		background-image: url("../img/bg-medium.jpg");
+	}
+
+	@media #{$small-height} {
+		background-image: url("../img/bg-small.jpg");
+	}
+
+	@media #{$small-width} {
+		background-image: url("../img/bg-small.jpg");
+	}
+
 	main {
 		display: flex;
 		justify-content: center;
@@ -143,11 +163,6 @@ body {
 
 			@media #{$medium-height} {
 				padding: 1rem;
-			}
-			
-			@media #{$small-width} {
-				flex-direction: column;
-
 			}
 
 			li {
