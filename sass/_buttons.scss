@@ -1,0 +1,47 @@
+.about-wrap {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	animation-name: land-in;
+	animation-duration: 0.75s;
+  	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+
+	@media #{$medium-height} {
+		padding: 1rem 0rem;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	.about-button {
+		color: #E9E9E9;
+		text-decoration: none;
+		margin: 3rem 1rem;
+		width: 5rem;
+		height: 1.8rem;
+		border-radius: 4px;
+		background-color: rgba(168, 168, 168, 0);
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		transition-property: background-color;
+		transition-duration: 0.3s;
+		transition-timing-function: ease-out;
+		font-size: 1rem;
+
+		&:hover {
+			background-color: rgba(168, 168, 168, 0.2);
+		}
+
+		@media #{$small-width} {
+			margin: 1rem 1rem;
+		}
+
+		@media #{$medium-height} {
+			margin: 1rem 1rem;
+		}
+	}
+}
