@@ -1,0 +1,24 @@
+footer {
+	display: flex;
+	justify-content: center;
+
+	#forkme {
+		font-size: 0.8rem;
+		color: #767678;
+		animation-name: land-in;
+		animation-duration: 0.75s;
+	  	animation-delay: 2s;
+		animation-fill-mode: forwards;
+		opacity: 0;
+		text-decoration: none;
+		padding: 0px 0px 5px;
+
+		@media #{$small-width} {
+			display: none;
+		}
+
+		@media #{$small-height} {
+			display: none;
+		}
+	}
+}
