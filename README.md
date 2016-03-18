@@ -11,4 +11,4 @@ for CSS:
 - Autoprefixer
 
 ##Licence
-See the [LICENSE]() file for license rights and limitations (MIT).
+See the [LICENSE](https://github.com/fotonmoton/fotonmoton/blob/master/LICENCE.md) file for license rights and limitations (MIT).
