@@ -1,6 +1,6 @@
-#about-wrap {
+ul#about-wrap {
 	display: flex;
-	padding: 0;
+	padding: 3rem 0 0 0;
 	margin: 0;
 	animation-name: land-in;
 	animation-duration: 0.75s;
@@ -9,39 +9,39 @@
 	opacity: 0;
 
 	@media #{$medium-height} {
-		padding: 1rem 0rem;
+		padding: 1rem 0 0 0;
 	}
 
 	li {
 		list-style-type: none;
+
+		&:nth-child(2) {
+			padding: 0 1rem;
+		}
 	}
 
-	.about-button {
-		color: #E9E9E9;
-		text-decoration: none;
-		margin: 3rem 1rem;
-		width: 5rem;
-		height: 1.8rem;
-		border-radius: 4px;
-		background-color: rgba(168, 168, 168, 0);
+	a.about-button {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+
+		color: #E9E9E9;
+		font-size: 1rem;
+		text-decoration: none;
+
+		padding: 0.2rem 0.5rem;
+		border-radius: 4px;
+		
+		background-color: rgba(168, 168, 168, 0);
+
 		transition-property: background-color;
 		transition-duration: 0.3s;
 		transition-timing-function: ease-out;
-		font-size: 1rem;
 
 		&:hover {
 			background-color: rgba(168, 168, 168, 0.2);
 		}
 
-		@media #{$small-width} {
-			margin: 1rem 1rem;
-		}
-
-		@media #{$medium-height} {
-			margin: 1rem 1rem;
-		}
+		
 	}
 }

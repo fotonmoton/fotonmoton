@@ -18,11 +18,13 @@ html, body {
 }
 
 body {
-	min-height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	
+	min-height: 100%;
+	
 	background-color: #103E50;
 
 	main {
@@ -30,8 +32,8 @@ body {
 		justify-content: center;
 		flex-direction: column;
 		align-items: center;
+
 		height: 100%;
-		width: 45%;
 		padding: 0rem 3rem;
 		overflow: hidden;
 
