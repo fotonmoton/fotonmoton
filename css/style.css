@@ -17,6 +17,13 @@
     opacity: 0; }
   100% {
     opacity: 1; } }
+@keyframes disapear {
+  0% {
+    opacity: 1; }
+  10% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
 div#bg {
   background: url("../img/bg.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -69,7 +76,10 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 100%;
-  background-color: #103E50; }
+  background-color: #103E50;
+  animation-fill-mode: backwards;
+  animation-duration: 5s;
+  animation-timing-function: easy-in; }
   body main {
     display: flex;
     justify-content: center;
@@ -187,9 +197,8 @@ ul#about-wrap {
     ul#about-wrap {
       padding: 1rem 0 0 0; } }
   ul#about-wrap li {
-    list-style-type: none; }
-    ul#about-wrap li:nth-child(2) {
-      padding: 0 1rem; }
+    list-style-type: none;
+    padding: 0.3rem; }
   ul#about-wrap a.about-button {
     display: flex;
     justify-content: space-around;
@@ -205,6 +214,33 @@ ul#about-wrap {
     transition-timing-function: ease-out; }
     ul#about-wrap a.about-button:hover {
       background-color: rgba(168, 168, 168, 0.2); }
+
+div#lang-wrap {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  opacity: 0;
+  animation-name: land-in;
+  animation-duration: 0.75s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards; }
+  div#lang-wrap a {
+    text-decoration: none;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #e9e9e9;
+    background-color: rgba(233, 233, 233, 0);
+    padding: 0.5rem;
+    border-radius: 3px;
+    transition: background-color 0.5s;
+    transition: color 0.2s;
+    transition-timing-function: easy-in; }
+    div#lang-wrap a:hover {
+      background-color: #e9e9e9;
+      color: #454545; }
 
 footer {
   display: flex;
