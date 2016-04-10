@@ -1,0 +1,33 @@
+div#lang-wrap {
+	display: flex;
+
+	position: fixed;
+	top: 0;
+	right: 0;
+
+	padding: .5rem;
+	
+	a {
+		text-decoration: none;
+		font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 1.2rem;
+		color: rgba(255, 255, 255, 1);
+		
+		background-color: rgba(233, 233, 233, 1);
+
+		padding: .5rem;
+		margin:  .5rem;
+		
+		border-radius: 3px;
+
+		transition: background-color 0.5s;
+		transition: color 0.2s;
+		transition-timing-function: easy-in;
+
+		&:hover {
+			background-color: rgba(233, 233, 233, 0);
+			color: rgba(69, 69, 69, 1);
+		}
+	}
+}

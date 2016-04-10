@@ -1,0 +1,4 @@
+- fill site with works
+- multilanguage "about me" and works
+- carusel in works
+- animation in works and "about me"

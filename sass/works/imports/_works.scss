@@ -1,0 +1,46 @@
+div.work-wrap {
+	position: relative;
+
+	border-radius: 4px;
+
+	margin-top: 8rem;
+
+	transition-property: box-shadow;
+	transition-timing-function: easy-out;
+	transition-duration: .3s;
+
+	img {
+		width:  100%;
+		height: 100%;
+
+		object-fit: cover;
+		
+		border-radius: 4px;
+	}
+
+	a.about-work-link {
+		position: absolute;
+		top:      0;
+		left:     0;
+
+		width:  100%;
+		height: 100%;
+
+		display:         flex;
+		justify-content: center;
+		align-items:     center;
+
+		background-color: rgba(0, 0, 0, 0.8);
+		border-radius:    4px;
+		
+		opacity: 0;
+
+		transition-property: opacity;
+		transition-timing-function: easy-out;
+		transition-duration: .3s;
+
+		div.about-work {
+			font-size: 1.5rem;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+html, body {
+	padding: 0;
+	margin: 0;
+
+	min-width: 100%;
+	height: 100%;
+
+	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+	color: #E9E9E9;
+	font-size: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	
+	background-color: #fff;
+	
+	animation-fill-mode: backwards;
+	animation-duration: 5s;
+	animation-timing-function: easy-in;
+
+	main {
+		display: flex;
+		flex-direction: column;
+		padding: 0rem 8rem;
+	}	
+}

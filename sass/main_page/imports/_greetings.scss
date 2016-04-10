@@ -1,0 +1,13 @@
+h3#greetings {
+	font-family: 'Pacifico', 'Lobster', cursive;
+	font-size: 3rem;
+	font-style: italic;
+
+	animation: land-in 0.75s 0.75s forwards, color-change 2.5s 0.75s forwards;
+	
+	opacity: 0;
+
+	@media #{$small-width} {
+		font-size: 2.5rem;
+	}
+}

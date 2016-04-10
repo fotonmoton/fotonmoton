@@ -1,0 +1,12 @@
+h3#main-text {
+	font-weight: normal;
+	font-size: 1.2rem;
+
+	animation: land-in 0.75s 1s forwards, color-change 2.5s 0.75s forwards;
+	
+	opacity: 0;
+
+	@media #{$small-width} {
+		font-size: 1.1rem;
+	}
+} 
