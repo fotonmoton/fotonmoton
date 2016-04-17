@@ -1,4 +1,4 @@
-css/*.map
+*.map
 koala-config.json
 *.sublime-workspace
 *.sublime-project
