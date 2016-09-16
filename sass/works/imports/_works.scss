@@ -37,7 +37,7 @@ div.work {
 		}
 
 		@media screen and #{$small-width} {
-		    font-size: 3rem;
+		    font-size: 2rem;
 		}
 	}
 
@@ -63,6 +63,7 @@ div.work {
 
 		@media screen and #{$medium-width} {
 			border-radius: 0;
+			width: 100%;
 		}
 
 		div.about-work {
